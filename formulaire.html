@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/background-gradient.css">
+    <title>LoreQuiz  - Jouer</title>
+</head>
+<body>
+    <header>QUIZHU le bg</header>
+
+    <div class="content">
+        <form id="form" method="GET" action="./traitement.php">
+            <fieldset id="profile">
+                <legend>Profil</legend>
+                <label for="nickname">Pseudo</label>
+                <input type="text" name="nickname" id="nickname" required> <br>
+                <!-- <label for="nom">Nom<span class="red-dot">*</span></label><br/> 
+                <input type="text" name="nom" id="nom" required><br/>
+                <label for="prenom">Prénom<span class="red-dot">*</span></label> <br/>
+                <input type="text" name="prenom" id="prenom" required><br/> -->
+                <!-- <label for="dob">Date de naissance</label> <br/>
+                <input type="date" name="dob" id="dob" required><br/> -->
+                <!-- <label for="email">Email<span class="red-dot">*</span></label> <br/>
+                <input type="email" name="email" id="email" required><br/> -->
+                <!-- <label for="pwd">Mot de passe</label>
+                <input type="password" name="pwd" id="pwd"> -->
+            </fieldset>
+
+            <fieldset>
+                <legend>Quiz</legend>
+                <label for="height">Combien ?</label><br/>
+                <input type="range" value="0" max="500" id="height" min="0" step="1" name="height" onchange="rangevalue.value=value">
+                <output id="rangevalue">0</output>m
+                
+                <br/>
+
+                <p>Quel pays font partis de l'Union Européenne ?</p>
+                <input type="checkbox" name="pays[]" id="france" value="france"/> <label for="france">France</label><br />
+                <input type="checkbox" name="pays[]" id="espagne" value="espagne"/> <label for="espagne">Espagne</label><br />
+                <input type="checkbox" name="pays[]" id="italie" value="italie"/> <label for="italie">Italie</label><br />
+                <input type="checkbox" name="pays[]" id="perou" value="perou"/> <label for="perou">Pérou</label><br />
+                <input type="checkbox" name="pays[]" id="pologne" value="pologne"/> <label for="pologne">Pologne</label><br/>
+
+                <label >Combien de pays constituent l'Union Européenne ? </label> <br>
+                <input type="radio" name="radio" id="rb1" value="15"><label for="rb1">15</label>
+                <input type="radio" name="radio" id="rb2" value="17"><label for="rb2">17</label>
+                <input type="radio" name="radio" id="rb3" value="22"><label for="rb3">22</label>
+                <input type="radio" name="radio" id="rb4" value="27"><label for="rb4">27</label>
+                <input type="radio" name="radio" id="rb5" value="32"><label for="rb5">32</label><br/>
+
+                <label for="brexit">Quand a eu lieu le Brexit ? </label>
+                <input type="date" name="brexit" id="brexit" value="2002-06-11">
+                
+                <p>Lequels de ces prénoms n'est pas validé pas Monsieur Zemmour ?<p/>
+                <input type="checkbox" name="prenom-fr" id="Jean" value="Jean"><label>JEAN</label>
+                
+                
+                
+                <label for="pays">Lequels de ces pays a la vitesses de connexion moyenne la plus rapide ?</label>
+                <select name="pays" id="pays">
+                    <optgroup label="Europe">
+                        <option value="france">France</option>
+                        <option value="espagne">Espagne</option>
+                        <option value="italie">Italie</option>
+                        <option value="royaume-uni">Royaume-Uni</option>
+                    </optgroup>
+                    <optgroup label="Amérique">
+                        <option value="canada">Canada</option>
+                        <option value="etats-unis">Etats-Unis</option>
+                    </optgroup>
+                    <optgroup label="Asie">
+                        <option value="chine">Chine</option>
+                        <option value="coree-de-sud">Corée du Sud</option>
+                        <option value="japon">Japon</option>
+                        <option value="singapour">Singapour</option>
+                    </optgroup>
+                </select>
+
+                <br>
+                <label for="arrondissement">Combien d'arrondissement comporte Paris ?</label>
+                <input type="number" id="arrondissement" name="arrondissement", min="0", max="50" step="1"><br>
+
+                <label for="google-queries">Combien de requetes Google traite-t-il en moyenne ?</label>
+                <input type="number" name="google-queries" id="google-queries" min=0>
+                <br>
+                <label for="wifi">Que signifie Wi-fi ?</label>
+                <input type="text" name="wifi" id="wifi">
+                <br>
+                <label for="www">Qui a creer le terme "World Wide Web" ?</label>
+                <input type="text" name="www" id="www">
+            </fieldset>
+
+            
+
+            <div class="submit-area">
+                <input type="submit" value="Soumettre" id="submit">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
+
+
+<!-- 
+    Questions :
+
+    - Combien de requete google traite-t-il en moyenne par seconde : 40 000 -> 63,000
+    - Quelle decenie marque la première version de l’Internet a été conceptualisée : ~ 1960
+    - Que signifie Wi-fi ? : Ce n'est pas un acronyme
+    - Qui a creer le terme "World Wide Web" ? : Tim Berners-Lee
+ -->

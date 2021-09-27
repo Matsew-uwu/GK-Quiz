@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+  font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0;
+
+    
+}
+
+.content{
+    margin: 2em 0;
+    border-radius: 1em;
+    box-shadow: 10px 5px 5px hsla(0, 0%, 14%, 0.33);
+    padding: 3em;
+
+    background-color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+}
+
+.submit-area{
+  display: flex;
+  justify-content: center;
+}
+
+#submit{
+  padding: 1em 1.5em;
+  margin-top: 0.5em;
+  border-radius: 2px;
+  background-color: #ba0c49;
+  color: #fffffa;
+  border: none;
+  font-weight: bold;
+}
+
+#submit:hover{
+  padding: 1em 1.5em;
+  margin-top: 0.5em;
+  background-color: white;
+  color: #ba0c49;
+  border: thin #ba0c49 solid;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#profile input[type=text], input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+.red-dot{
+  color: red;
+}
+
+input{
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+br{
+  margin: 1em 0;
+}
