@@ -1,8 +1,10 @@
-# GK-Quiz
-A small website with quizzes on general knowledge 
+## GK-Quiz !
 
--- FRENCH --
-Ce site contient un quiz avec des questions de culture générale. Elle à été réalisée dans un cadre scolaire de 2ème année de DUT Informatique.
+> A small website with quizzes on general knowledge.
+> Made for educative purposes.
 
+# What I Learned
 
--- ENGLISH --
+- How to use create and manage forms in HTML
+- How to deal with forms with PHP
+- How to manipulate data with PHP
